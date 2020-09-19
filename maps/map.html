@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Homepage</title>
+  <script type="text/javascript" src="./lib/d3.v5.min.js"></script>
+  <script type="text/javascript" src="./lib/d3-dsv.min.js"></script>
+  <script type="text/javascript" src="./lib/d3-fetch.min.js"></script>
+  <script type="text/javascript" src="./lib/d3-scale-chromatic.v1.min.js"></script>
+  <script type="text/javascript" src="./lib/topojson.v2.min.js"></script>
+  <script type="text/javascript" src="./lib/d3-tip.min.js"></script>
+  <script type="text/javascript" src="./lib/d3-simple-slider.min.js"></script>
+  <link rel="stylesheet" href="map.css">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <header>
+    <!-- container -->
+    <div class="container">
+      <div class="pageTitle"><img src="./images/Restaurant Map.svg" /></div>
+      <nav class="site-nav">
+        <ul class="group">
+          <li><a href="./map.html">Home</a></li>
+          <li><a href="./introduction.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- /container -->
+
+  </header>
+
+  <!-- Google Map -->
+  <div id="map"></div>
+  <script type="text/javascript" src="cities.js"></script>
+  <script type="text/javascript" src="restuarants.js"></script>
+  <div id="label"></div>
+  <div id="subplot">
+  </div>
+  <script type="text/javascript" src="./subplot.js"></script>
+  <script type="text/javascript" src="map.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMyzUhTAT0JltFXe19I_Y9nMlL7RAKN5w&libraries=places&callback=initMap"
+    async defer></script>
+</body>
+
+</html>
